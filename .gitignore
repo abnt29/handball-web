@@ -1,0 +1,23 @@
+# ドキュメント（GitHub非公開）
+MANUAL.md
+README.md
+
+# OS生成ファイル
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# エディタ・開発設定
+.vscode/
+.idea/
+*.swp
+*~
+
+# ログ・一時ファイル
+*.log
+*.tmp
+
+# 未使用素材
+assets/unused/
