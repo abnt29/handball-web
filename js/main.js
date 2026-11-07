@@ -1,4 +1,4 @@
-/**
+﻿/**
  * 青葉ハンドボールスポーツ少年団 公式Webサイト メインスクリプト (サンプル)
  */
 
@@ -36,18 +36,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Google Analytics 4 (GA4) 読み込み
-  const GA_MEASUREMENT_ID = "G-4QVZ7MD3HW";
-  if (GA_MEASUREMENT_ID) {
-    const gaScript = document.createElement("script");
-    gaScript.async = true;
-    gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
-    document.head.appendChild(gaScript);
+  // Google Tag Manager / GA4 読み込み (GTM-NZX92D8H / G-4QVZ7MD3HW)
+  const gtmScript = document.createElement("script");
+  gtmScript.async = true;
+  gtmScript.src = "https://www.googletagmanager.com/gtm.js?id=GTM-NZX92D8H";
+  document.head.appendChild(gtmScript);
 
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { window.dataLayer.push(arguments); }
-    window.gtag = gtag;
-    gtag("js", new Date());
-    gtag("config", GA_MEASUREMENT_ID);
-  }
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { window.dataLayer.push(arguments); }
+  window.gtag = gtag;
+  gtag("js", new Date());
+  gtag("config", "G-4QVZ7MD3HW");
 });
