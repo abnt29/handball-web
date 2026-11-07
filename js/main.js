@@ -35,4 +35,19 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+
+  // Google Analytics 4 (GA4) 読み込み
+  const GA_MEASUREMENT_ID = "G-4QVZ7MD3HW";
+  if (GA_MEASUREMENT_ID) {
+    const gaScript = document.createElement("script");
+    gaScript.async = true;
+    gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+    document.head.appendChild(gaScript);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { window.dataLayer.push(arguments); }
+    window.gtag = gtag;
+    gtag("js", new Date());
+    gtag("config", GA_MEASUREMENT_ID);
+  }
 });
